@@ -4,6 +4,8 @@ El proyecto consiste en crear una landing page Responsiva donde vivirá un formu
 
 ## Requisitos
 
+- [ ] docker back
+- [ ] docker front
 - [ ] docker compose
 
 ### backend
@@ -21,3 +23,5 @@ El proyecto consiste en crear una landing page Responsiva donde vivirá un formu
 
 
 ## Set Up
+
+Se deben configurar en archivo env con las credenciales de gmail.
