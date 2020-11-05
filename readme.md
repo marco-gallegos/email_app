@@ -4,9 +4,9 @@ El proyecto consiste en crear una landing page Responsiva donde vivirá un formu
 
 ## Requisitos
 
-- [ ] docker back
-- [ ] docker front
-- [ ] docker compose
+- [x] docker back
+- [x] docker front
+- [x] docker compose
 
 ### backend
 
