@@ -13,7 +13,7 @@ do
 done
 
 echo "ejecutando migraciones"
-docker exec turnmyapp_backend_1 php artisan migrate
+docker exec backend_gallem php artisan migrate
 echo "si viste un error de migracion ejecuta el comando"
 
-echo "docker exec turnmyapp_backend_1 php artisan migrate"
+echo "docker exec backend_gallem php artisan migrate"
