@@ -1,3 +1,4 @@
+#!/bin/bash
 docker-compose up -d
 
 echo "espera un tiempo para correr las migraciones de laravel ...."
