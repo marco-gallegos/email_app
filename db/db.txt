@@ -1,1 +1,0 @@
-en esta carpeta docker almacena los datos de la db
