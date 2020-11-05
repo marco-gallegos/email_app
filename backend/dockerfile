@@ -17,7 +17,7 @@ RUN docker-php-ext-install mysqli pdo pdo_mysql
 
 #RUN composer install
 
-#RUN php artisan migrate
+RUN php artisan migrate
 
 EXPOSE 8000
 
