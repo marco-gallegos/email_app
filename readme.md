@@ -23,16 +23,34 @@ El proyecto consiste en crear una landing page Responsiva donde vivirá un formu
 
 
 ## Set Up
-Se deben configurar en archivo backend env con las credenciales de gmail.
+Se deben configurar en archivo backend/.env con las credenciales de gmail.
 
 ### docker
-correr
 
-- docker-compose up
-- ir a http://127.0.0.1:8080
+debemos correr los siguientes comandos
+
+nota : debemos esperar a que el sh termine
+nota2 : el archivo uninstall.sh elimina las imagenes de docker
+
+- bash install.sh
+
+
+ir a http://127.0.0.1:8080
 
 ### manual
- requieres php nodejs y un servidor de bases de datos mariadb o mysql
+requieres php, nodejs y un servidor de bases de datos mariadb o mysql
 
-configurar en el archivo backend/.env
+configurar en el archivo backend/.env los datos de la db y el mail
 - datos de acceso a el SGBD
+- datos de acceso a un servidor smtp ( en gmail es facil y viene preconfigurado )
+- ir a la carpeta backend y ejecutar `php artisan migrate`
+- ir a la carpeta backend y ejecutar `php artisan serve`
+- ir a la carpeta frontend y ejecutar `npm install`
+- ir a la carpeta frontend y ejecutar `npm install -g @vue/cli`
+- ir a la carpeta frontend y ejecutar `npm run serve`
+
+ir a http://127.0.0.1:8080
+
+no olvidar la configuracion de seguridad en la cuenta gmail
+se usa este metodo por simplicidad de configuracion
+(google/gmail) administrar cuenta -> seguridad -> acceso de apps menos seguras = true
