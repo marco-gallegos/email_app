@@ -23,5 +23,16 @@ El proyecto consiste en crear una landing page Responsiva donde vivirá un formu
 
 
 ## Set Up
+Se deben configurar en archivo backend env con las credenciales de gmail.
 
-Se deben configurar en archivo env con las credenciales de gmail.
+### docker
+correr
+
+- docker-compose up
+- ir a http://127.0.0.1:8080
+
+### manual
+ requieres php nodejs y un servidor de bases de datos mariadb o mysql
+
+configurar en el archivo backend/.env
+- datos de acceso a el SGBD

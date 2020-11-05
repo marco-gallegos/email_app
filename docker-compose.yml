@@ -1,0 +1,28 @@
+version: "3.1"
+
+services:
+  frontend:
+    build: ./landing/
+    ports:
+      - 8080:8080
+
+  mariadb_emails:
+    image: mariadb/server:10.4
+    environment:
+      MARIADB_DATABASE: backend
+      MARIADB_ROOT_PASSWORD: root
+      MARIADB_USER: back
+      MARIADB_PASSWORD: back
+    volumes:
+      - ./db:/var/lib/mysql
+    ports:
+      - 3306:3306
+  
+  backend:
+    build: ./backend/
+    volumes:
+      - ./backend:/app
+    links:
+      - mariadb_emails:mariadb_emails
+    ports:
+      - 8000:8000
